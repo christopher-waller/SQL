@@ -1,0 +1,19 @@
+/** model cars store database **/
+
+CREATE TABLE model_cars (ID integer primary key, NAME text, MODEL text, PRICE integer, ASILE integer);
+INSERT INTO model_cars VALUES (1, "Ford", "Bronco", 5.00, 1);
+INSERT INTO model_cars VALUES (2, "Ford", "F-150", 7.00, 1);
+INSERT INTO model_cars VALUES (3, "Ford", "Mustang", 8.00, 1);
+INSERT INTO model_cars VALUES (4, "Chevy", "Corvette", 9.00, 2);
+INSERT INTO model_cars VALUES (5, "Chevy", "Camaro", 15.00, 2);
+INSERT INTO model_cars VALUES (6, "Chevy", "Siverado", 4.00, 2);
+INSERT INTO model_cars VALUES (7, "Toyota", "Camary", 2.00, 3);
+INSERT INTO model_cars VALUES (8, "Toyota", "Tundra", 15.00, 3);
+INSERT INTO model_cars VALUES (10, "Toyota", "Tacoma", 6.00, 3);
+INSERT INTO model_cars VALUES (11, "Honda", "CRX", 8.00, 4);
+INSERT INTO model_cars VALUES (12, "Honda", "CRV", 7.00, 4);
+INSERT INTO model_cars VALUES (13, "Honda", "PRIA", 5.00, 4);
+INSERT INTO model_cars VALUES (14, "Honda", "CRT", 5.00, 4);
+INSERT INTO model_cars VALUES (15, "Honda", "CTZ", 5.00, 4);
+
+SELECT model FROM model_cars ORDER BY price;
